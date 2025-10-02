@@ -1,0 +1,16 @@
+name: All Tests
+
+on: pull_request
+
+jobs:
+  lint:
+    name: Lint and typecheck Python code
+    runs-on:
+      - runs-on=${{ github.run_id }}
+      - job=lint
+      - extras=s3-cache
+    steps:
+      - uses: actions/checkout@v5
+      - uses: citizensadvice/python-uv-setup-action@v1
+      - uses: extractions/setup-just@v3
+      - run: just lint

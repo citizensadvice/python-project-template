@@ -1,0 +1,23 @@
+repos:
+  # pre-commit-hooks checkers and fixers
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v2.3.0
+    hooks:
+      - id: end-of-file-fixer
+      - id: trailing-whitespace
+      - id: check-yaml
+      - id: check-toml
+      - id: check-json
+      - id: detect-private-key
+      - id: detect-aws-credentials
+        args: ['--allow-missing-credentials']
+
+  # Ruff for python formatting and linting
+  - repo: local
+    hooks:
+      - id: check
+        name: Formatting, linting and typechecking
+        entry: just lint
+        language: system
+        always_run: true
+        pass_filenames: false
