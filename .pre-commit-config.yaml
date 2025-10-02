@@ -19,5 +19,4 @@ repos:
         name: Formatting, linting and typechecking
         entry: just lint
         language: system
-        always_run: true
-        pass_filenames: false
+        types: [python]

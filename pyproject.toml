@@ -30,12 +30,21 @@ indent-width = 4
 
 [tool.ruff.lint]
 select = [
-    "E",   # pycodestyle errors
-    "W",   # pycodestyle warnings
-    "F",   # pyflakes
+    "RUF", # Ruff specific rules
     "N",   # pep8-naming
     "I",   # isort
-    "RUF", # Ruff specific rules
+    "F",   # pyflakes
+    "UP",  # pyupgrade
+    "E",   # pycodestyle errors
+    "W",   # pycodestyle warnings
+    "ANN", # flake8-annotations
+    "S",   # flake8-bandit
+    "B",   # flake8-bugbear
+    "A",   # flake8-builtins
+    "C4",  # flake8-comprehensions
+    "DTZ", # flake8-datetimez
+
+
 ]
 ignore = [
     "E501", # line-too-long
