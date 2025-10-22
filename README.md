@@ -2,6 +2,17 @@
 
 A template for Python projects at Citizens Advice.
 
+## What this template includes
+
+- **Project Structure**: A standardized directory layout for Python projects.
+- **Dependency Management**: Uses `uv` for managing dependencies and virtual environments.
+- **Code Quality**: Pre-configured `ruff` and `ty` set up for code linting, formatting and type-checking.
+- **Task Automation**: A `Justfile` for automating common tasks like testing, linting, and formatting.
+- **Pre-commit Hooks**: Configured pre-commit hooks for code quality checks.
+- **Code Ownership**: A `CODEOWNERS` file to define code ownership for the repository.
+- **Github Actions**: Pre-configured CI workflows for linting.
+- **System Packages**: Brewfile for system package installation.
+
 ## Project Setup
 
 When starting a new Python project, you can use this template to ensure consistency across projects. Follow these steps to configure this for your own needs:
