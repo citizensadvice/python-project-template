@@ -44,9 +44,8 @@ select = [
     "A",   # flake8-builtins
     "C4",  # flake8-comprehensions
     "DTZ", # flake8-datetimez
-
-
 ]
+
 ignore = [
     "E501", # line-too-long
     "T201", # print
