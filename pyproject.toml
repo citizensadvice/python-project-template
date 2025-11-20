@@ -49,6 +49,7 @@ select = [
 ignore = [
     "E501", # line-too-long
     "T201", # print
+    "S101", # use of assert
 ]
 
 [tool.ruff.lint.isort]
