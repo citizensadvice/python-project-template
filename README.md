@@ -8,7 +8,7 @@ A template for Python projects at Citizens Advice.
 - **Dependency Management**: Uses `uv` for managing dependencies and virtual environments.
 - **Code Quality**: Pre-configured `ruff` and `ty` set up for code linting, formatting and type-checking.
 - **Task Automation**: A `Justfile` for automating common tasks like testing, linting, and formatting.
-- **Pre-commit Hooks**: Configured pre-commit hooks for code quality checks.
+- **Pre-commit Hooks**: Configured pre-commit hooks for code quality checks (Individual contributors can use `pre-commit` or `prek` for local execution).
 - **Code Ownership**: A `CODEOWNERS` file to define code ownership for the repository.
 - **Github Actions**: Pre-configured CI workflows for linting.
 - **System Packages**: Brewfile for system package installation.
