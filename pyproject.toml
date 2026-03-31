@@ -59,3 +59,13 @@ combine-as-imports = true
 [tool.ty.environment]
 root = ["python_project_template"]
 python = "./.venv"
+
+[tool.uv-secure.vulnerability_criteria]
+show_severity = true
+ignore_unfixed = true
+
+[tool.uv-secure.maintainability_criteria]
+forbid_yanked = true
+forbid_archived = true
+forbid_deprecated = true
+forbid_quarantined = true

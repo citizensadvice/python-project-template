@@ -22,3 +22,8 @@ format *paths:
     uv run ruff format {{ paths }}
     uv run ruff check --fix {{ paths }}
     just --fmt --unstable
+
+# Audit dependencies for security vulnerabilities
+[group("Code Quality")]
+audit:
+    uvx uv-secure uv.lock
