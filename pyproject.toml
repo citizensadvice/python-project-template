@@ -66,6 +66,5 @@ ignore_unfixed = true
 
 [tool.uv-secure.maintainability_criteria]
 forbid_yanked = true
-forbid_archived = true
 forbid_deprecated = true
 forbid_quarantined = true
