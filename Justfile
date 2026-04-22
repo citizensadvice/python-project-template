@@ -24,6 +24,6 @@ format *paths:
     just --fmt --unstable
 
 # Audit dependencies for security vulnerabilities
-[group("Code Quality")]
+[group("Security")]
 audit:
-    uvx uv-secure uv.lock
+    uv audit --frozen --preview-features audit
