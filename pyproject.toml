@@ -9,8 +9,8 @@ dependencies = []
 [dependency-groups]
 dev = [
     "pytest>=9.0.3",
-    "ruff>=0.15.12",
-    "ty>=0.0.34",
+    "ruff>=0.15.13",
+    "ty>=0.0.37",
 ]
 
 [build-system]
