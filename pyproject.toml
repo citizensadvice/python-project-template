@@ -53,8 +53,14 @@ select = [
 ignore = [
     "E501",   # line-too-long
     "T201",   # print
-    "S101",   # use of assert
+    "ANN002", # missing type annotation for args
     "ANN003", # missing type annotation for kwargs
+]
+
+[lint.extend-per-file-ignores]
+"tests/**/test*.py" = [     # in tests files ignore:
+    "S101",                 # - use of `assert`
+    "TRY002",               # - rasing vanilla exceptions
 ]
 
 [tool.ruff.lint.isort]
