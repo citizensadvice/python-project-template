@@ -51,16 +51,15 @@ select = [
 ]
 
 ignore = [
-    "E501",   # line-too-long
-    "T201",   # print
-    "ANN002", # missing type annotation for args
-    "ANN003", # missing type annotation for kwargs
+    "ANN002", # missing type annotation for *args ------> https://docs.astral.sh/ruff/rules/missing-type-args/
+    "ANN003", # missing type annotation for **kwargs----> https://docs.astral.sh/ruff/rules/missing-type-kwargs/
+    "E501",   # line-too-long --------------------------> https://docs.astral.sh/ruff/rules/line-too-long/
 ]
 
 [lint.extend-per-file-ignores]
 "tests/**/test*.py" = [     # in tests files ignore:
-    "S101",                 # - use of `assert`
-    "TRY002",               # - rasing vanilla exceptions
+    "S101",                 # - use of `assert` ---------------> https://docs.astral.sh/ruff/rules/assert/
+    "TRY002",               # - rasing vanilla exceptions -----> https://docs.astral.sh/ruff/rules/raise-vanilla-class/
 ]
 
 [tool.ruff.lint.isort]
