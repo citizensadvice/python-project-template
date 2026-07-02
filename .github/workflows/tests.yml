@@ -10,7 +10,7 @@ jobs:
       - job=lint
       - extras=s3-cache
     steps:
-      - uses: actions/checkout@df4cb1c069e1874edd31b4311f1884172cec0e10
+      - uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0
       - uses: citizensadvice/python-uv-setup-action@dac93858ee327eb09052711b17803ecdfa4da10b
       - uses: extractions/setup-just@53165ef7e734c5c07cb06b3c8e7b647c5aa16db3
       - run: just lint
@@ -22,7 +22,7 @@ jobs:
       - job=audit-dependencies
       - extras=s3-cache
     steps:
-      - uses: actions/checkout@df4cb1c069e1874edd31b4311f1884172cec0e10
+      - uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0
         with:
           sparse-checkout: |
             uv.lock
