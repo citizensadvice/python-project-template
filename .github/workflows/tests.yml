@@ -11,7 +11,7 @@ jobs:
       - extras=s3-cache
     steps:
       - uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0
-      - uses: citizensadvice/python-uv-setup-action@dac93858ee327eb09052711b17803ecdfa4da10b
+      - uses: citizensadvice/python-uv-setup-action@70884aff70491439526c3e437c25803b9e67aaed
       - uses: extractions/setup-just@53165ef7e734c5c07cb06b3c8e7b647c5aa16db3
       - run: just lint
 
