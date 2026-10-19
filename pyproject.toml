@@ -45,7 +45,7 @@ select = [
     "N",   # pep8-naming -------------------> https://docs.astral.sh/ruff/rules/#pep8-naming-n
     "RUF", # Ruff specific rules -----------> https://docs.astral.sh/ruff/rules/#ruff-specific-rules-ruf
     "S",   # flake8-bandit -----------------> https://docs.astral.sh/ruff/rules/#flake8-bandit-s
-    "TRY", # tryceratops -------------------> https://docs.astral.sh/ruff/rules/#tryceratops-try
+    "TRY", # tryceratops -------------------> https://docs.astral.sh/ruff/rules/#tryceratops-try
     "UP",  # pyupgrade ---------------------> https://docs.astral.sh/ruff/rules/#pyflakes-f
     "W",   # pycodestyle warnings ----------> https://docs.astral.sh/ruff/rules/#warning-w
 ]
