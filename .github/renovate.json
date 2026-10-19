@@ -2,10 +2,10 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
     "config:recommended",
-    "schedule:weekly"
+    "schedule:earlyMondays"
   ],
   "assigneesFromCodeOwners": true,
-  "rebaseWhen": "never",
+  "rebaseWhen": "auto",
   "packageRules": [
     {
       "description": "Wait 5 days after release before proposing updates",
