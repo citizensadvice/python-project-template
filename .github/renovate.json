@@ -1,0 +1,22 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:recommended",
+    "schedule:weekly"
+  ],
+  "assigneesFromCodeOwners": true,
+  "rebaseWhen": "never",
+  "packageRules": [
+    {
+      "description": "Wait 5 days after release before proposing updates",
+      "matchManagers": ["pep621"],
+      "minimumReleaseAge": "5 days"
+    },
+    {
+      "description": "Group minor and patch updates into a single PR",
+      "matchManagers": ["pep621"],
+      "matchUpdateTypes": ["minor", "patch"],
+      "groupName": "regular-updates"
+    }
+  ]
+}
